@@ -3,6 +3,7 @@ from page.common_page import CommonPage
 from page.login_page import LoginPage
 from page.home_page import HomePage
 from page.pix_page import PixPage
+from page.emprestimo_page import EmprestimosPage
 
 @pytest.fixture
 def page(page):
@@ -25,3 +26,7 @@ def home_page(page):
 @pytest.fixture
 def pix_page(page):
         return PixPage(page)
+
+@pytest.fixture
+def emprestimos_page(page):
+        return EmprestimosPage(page)        
