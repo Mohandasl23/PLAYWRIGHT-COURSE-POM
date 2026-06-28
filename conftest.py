@@ -29,4 +29,6 @@ def pix_page(page):
 
 @pytest.fixture
 def emprestimos_page(page):
-        return EmprestimosPage(page)        
+        return EmprestimosPage(page)  
+        
+             
